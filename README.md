@@ -52,5 +52,8 @@ The game was built entirely using the Godot Engine. I worked solo after my teamm
 I’d love to expand the game with more scenarios, a scoring leaderboard, and new mini-games like:
 - **BYOD Chaos** – Manage an office full of sketchy devices and decide who gets network access
 - **Patch Patrol** – A time-management game about keeping systems up to date
-
 I also want to polish the art, add sound effects, and maybe port the game to web or mobile to reach more people. Cybersecurity deserves a bigger spotlight—and if it can be fun along the way, even better.
+
+## How to play it
+
+You can go to https://manvirk21.itch.io/cyber-office-chronicles and play the games. If that doesn't work, you'll need to install Godot and download the zipped version of my project, open project.godot and hit play at the top left of your screen.
