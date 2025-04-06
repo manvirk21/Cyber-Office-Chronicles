@@ -1,0 +1,498 @@
+{
+	"scenarios": [    
+		{
+			"title": "📩 CEO Phishing Chain",
+			"stages": [
+			{
+				"scenario": "You discover the CEO’s email on LinkedIn. How do you make first contact? 💼",
+				"options": [
+					{"text": "Send a fake Microsoft login email", "score": 10, "outcome": "✅ They entered their credentials. You're in!"},
+					{"text": "Send a cat meme", "score": 0, "outcome": "😼 They laughed... and deleted it."},
+					{"text": "Send a suspicious invoice PDF", "score": 5, "outcome": "📄 It got flagged but wasn’t reported."}
+				]
+			},
+			{
+				"scenario": "You're inside the inbox. What next? 📨",
+				"options": [
+					{"text": "Forward emails to your dummy account", "score": 10, "outcome": "📬 Full access granted. Inbox exfiltrated."},
+					{"text": "Mark everything as read", "score": 0, "outcome": "🤨 No one noticed, but no gain either."},
+					{"text": "Send a fake internal alert", "score": 5, "outcome": "📢 A few people clicked it. Mild success."}
+				]
+			},
+			{
+				"scenario": "You see an upcoming board meeting invite. What do you do? 🧠",
+				"options": [
+					{"text": "Send a fake agenda with malware", "score": 10, "outcome": "🗂️ One exec downloaded it. Gotcha."},
+					{"text": "Cancel the meeting", "score": 0, "outcome": "🚫 That raised red flags. Access under review."},
+					{"text": "Join the Zoom call anonymously", "score": 5, "outcome": "🎥 You heard chatter but nothing critical."}
+				]
+			},
+			{
+				"scenario": "You now have access to the CFO’s calendar. Next step? 💰",
+				"options": [
+					{"text": "Send a fake wire transfer request", "score": 10, "outcome": "💸 The assistant approved it. Nice one."},
+					{"text": "Ask for login help via spoofed email", "score": 5, "outcome": "🔑 Got limited credentials."},
+					{"text": "Log out to cover your tracks", "score": 0, "outcome": "😶 A little too cautious. You missed the moment."}
+				]
+			},
+			{
+				"scenario": "You have one final move before your window closes. Choose wisely 🕒",
+				"options": [
+					{"text": "Drop ransomware", "score": 10, "outcome": "💥 Systems encrypted. Big win (and big mess)."},
+					{"text": "Install silent backdoor", "score": 5, "outcome": "🕵️ Persistent access established."},
+					{"text": "Do nothing and leave", "score": 0, "outcome": "👋 A ghost in the machine... but no reward."}
+				]
+			}
+		]
+	},
+	{
+		"title": "🎧 Targeting IT Helpdesk",
+		"stages": [
+			{
+				"scenario": "You call IT pretending to be a senior dev. What’s your first ask? 📞",
+				"options": [
+					{"text": "Password reset", "score": 10, "outcome": "🔁 They reset it, no questions asked. Oof."},
+					{"text": "Request VPN setup help", "score": 5, "outcome": "🔐 Got config, but no creds."},
+					{"text": "Complain about slow Wi-Fi", "score": 0, "outcome": "📶 They rolled their eyes and moved on."}
+				]
+			},
+			{
+				"scenario": "You’re inside with temp credentials. Next move? 🧬",
+				"options": [
+					{"text": "Access file shares", "score": 10, "outcome": "🗃️ Sensitive docs unlocked."},
+					{"text": "Try to open HR records", "score": 0, "outcome": "🚫 Permission denied."},
+					{"text": "Browse memes", "score": 0, "outcome": "😂 Fun, but you’re not here for that!"}
+				]
+			},
+			{
+				"scenario": "Someone pings you in Teams. What do you do? 💬",
+				"options": [
+					{"text": "Pretend to be a new hire", "score": 10, "outcome": "👶 They believed you! Got more info."},
+					{"text": "Ignore them", "score": 0, "outcome": "🙃 Awkward silence. Suspicion rising."},
+					{"text": "Send a weird emoji combo", "score": 0, "outcome": "😵 You confused them. Now they’re watching you."}
+				]
+			},
+			{
+				"scenario": "You’re asked to join a video call. Your move? 🎥",
+				"options": [
+					{"text": "Join with voice changer", "score": 5, "outcome": "🗣️ Worked briefly, then glitchy."},
+					{"text": "Fake mic issues", "score": 10, "outcome": "🔇 Perfect excuse to dodge."},
+					{"text": "Say you're in a loud café", "score": 5, "outcome": "☕ They let it slide."}
+				]
+			},
+			{
+				"scenario": "Time to leave a parting gift. What do you leave behind? 🎁",
+				"options": [
+					{"text": "Install backdoor", "score": 10, "outcome": "🔓 Future access granted."},
+					{"text": "Change passwords silently", "score": 5, "outcome": "🔐 Slight disruption, might get caught."},
+					{"text": "Send one last meme", "score": 0, "outcome": "😬 IT wasn’t impressed."}
+				]
+			}
+		]
+	},
+	{
+		"title": "💾 USB Drop Campaign",
+		"stages": [
+			{
+				"scenario": "You drop USBs in the parking lot. What label do you use? 🏷️",
+				"options": [
+					{"text": "‘Executive Salary Report’", "score": 10, "outcome": "💸 Someone couldn’t resist."},
+					{"text": "‘Photos - Vacation’", "score": 5, "outcome": "📸 Curious clicker plugged it in."},
+					{"text": "Blank drive", "score": 0, "outcome": "🕳️ Nobody cared."}
+				]
+			},
+			{
+				"scenario": "The USB payload activates. What does it do? ⚡",
+				"options": [
+					{"text": "Launches credential stealer", "score": 10, "outcome": "🔍 Got username and passwords."},
+					{"text": "Plays Rick Astley video", "score": 0, "outcome": "🎶 You got laughs... and ejected."},
+					{"text": "Sends system info", "score": 5, "outcome": "📤 Limited data collected."}
+				]
+			},
+			{
+				"scenario": "Security starts investigating odd network behavior. What now? 🚨",
+				"options": [
+					{"text": "Lay low and stop the attack", "score": 5, "outcome": "🫥 You slipped under the radar."},
+					{"text": "Accelerate the data dump", "score": 10, "outcome": "📈 Huge gain before detection."},
+					{"text": "Send a decoy email", "score": 0, "outcome": "📫 Nobody bought it."}
+				]
+			},
+			{
+				"scenario": "You find an open port to pivot. What do you access? 🔌",
+				"options": [
+					{"text": "Printer spool service", "score": 5, "outcome": "🖨️ Weird flex, but it worked."},
+					{"text": "Internal dev server", "score": 10, "outcome": "💻 Jackpot: no MFA and debug creds."},
+					{"text": "Smart coffee machine", "score": 0, "outcome": "☕ Yes, you can now brew remotely."}
+				]
+			},
+			{
+				"scenario": "Final move: your window’s closing fast. 🎯",
+				"options": [
+					{"text": "Exfiltrate files", "score": 10, "outcome": "🗃️ Mission complete!"},
+					{"text": "Send ransomware payload", "score": 5, "outcome": "💣 You caused chaos but lost access."},
+					{"text": "Delete logs and bail", "score": 5, "outcome": "🧼 Clean exit. Not flashy, but smart."}
+				]
+			}
+		]
+	},
+	{
+		"title": "🧳 Conference Call Con",
+		"stages": [
+			{
+				"scenario": "You find out about a company-wide virtual conference happening today. What’s your first move? 🎥",
+				"options": [
+					{ "text": "Spoof the event email with your own link", "score": 10, "outcome": "✅ A few employees used your fake link!" },
+					{ "text": "Join the real meeting silently", "score": 5, "outcome": "👂 You overheard project info." },
+					{ "text": "Message the organizer pretending to be IT", "score": 0, "outcome": "🤔 They were suspicious and reported it." }
+				]
+			},
+			{
+				"scenario": "You're monitoring employee chatter. Someone shares a Google Drive link. What do you do? 🔗",
+				"options": [
+					{ "text": "Replace the link with malware", "score": 10, "outcome": "🕵️‍♂️ They downloaded it before noticing." },
+					{ "text": "Open the link to gather intel", "score": 5, "outcome": "📝 Some planning docs, nothing huge." },
+					{ "text": "Ignore it", "score": 0, "outcome": "😴 You missed your window." }
+				]
+			},
+			{
+				"scenario": "Someone asks if you’re the new hire in the Zoom chat. What do you say? 👤",
+				"options": [
+					{ "text": "‘Yup! Just onboarding 😊’", "score": 10, "outcome": "🎯 They welcomed you right in." },
+					{ "text": "‘Who wants to play Minecraft?’", "score": 0, "outcome": "🎮 Uh... wrong crowd." },
+					{ "text": "Don’t reply", "score": 0, "outcome": "🤐 Silence raised a red flag." }
+				]
+			},
+			{
+				"scenario": "You're in a breakout room with an exec. Your move? 🚪",
+				"options": [
+					{ "text": "Ask for calendar access", "score": 5, "outcome": "🗓️ They share availability." },
+					{ "text": "Mention a fake meeting they’re late for", "score": 10, "outcome": "⏰ They panicked and gave more info." },
+					{ "text": "Leave to stay hidden", "score": 0, "outcome": "🚪 Exit stage left. Boring." }
+				]
+			},
+			{
+				"scenario": "Last chance before the event ends. Choose wisely. ⌛",
+				"options": [
+					{ "text": "Drop a phishing link in the group chat", "score": 10, "outcome": "📨 Several bites on the line!" },
+					{ "text": "Send a fake feedback form", "score": 5, "outcome": "📝 A few filled it out." },
+					{ "text": "Log out quietly", "score": 0, "outcome": "👋 You ghosted out with nothing." }
+				]
+			}
+		]
+	},
+	{
+		"title": "🔐 MFA Manipulation Mission",
+		"stages": [
+			{
+				"scenario": "Your target uses MFA. You want in. First step? 📱",
+				"options": [
+					{ "text": "Send fake MFA reset page", "score": 10, "outcome": "🛑 They typed their backup code!" },
+					{ "text": "Ask them for their code directly", "score": 0, "outcome": "😆 They laughed and reported you." },
+					{ "text": "Send fake IT support message", "score": 5, "outcome": "🤖 They’re skeptical, but engaged." }
+				]
+			},
+			{
+				"scenario": "They’re confused about your email. What do you do? 🤨",
+				"options": [
+					{ "text": "Say it’s urgent and from their boss", "score": 10, "outcome": "🚨 They responded fast." },
+					{ "text": "Resend the same email", "score": 0, "outcome": "📬 Redundant = suspicious." },
+					{ "text": "Send a fake Teams message", "score": 5, "outcome": "💬 They clicked but questioned it." }
+				]
+			},
+			{
+				"scenario": "They’re about to verify with their security team. Next move? 🧠",
+				"options": [
+					{ "text": "Say IT is busy with another breach", "score": 10, "outcome": "🧯 They hesitated... and trusted you." },
+					{ "text": "Beg them to hurry", "score": 0, "outcome": "🙅 Desperation isn’t convincing." },
+					{ "text": "Tell them the issue is resolved", "score": 5, "outcome": "🧊 Bought you some time." }
+				]
+			},
+			{
+				"scenario": "You now have session access. What do you do first? 💻",
+				"options": [
+					{ "text": "Pivot to a finance tool", "score": 10, "outcome": "💳 Found budgets, client data, and invoices." },
+					{ "text": "Send a celebratory GIF", "score": 0, "outcome": "🎉 You just outed yourself." },
+					{ "text": "Check their email", "score": 5, "outcome": "📧 Some decent leads." }
+				]
+			},
+			{
+				"scenario": "Final step. Their token is about to expire. 🎫",
+				"options": [
+					{ "text": "Download everything fast", "score": 10, "outcome": "📦 You grabbed it all!" },
+					{ "text": "Drop a keylogger", "score": 5, "outcome": "🪤 Set and forget—maybe useful later." },
+					{ "text": "Do nothing", "score": 0, "outcome": "😴 You missed your window." }
+				]
+			}
+		]
+	},
+	{
+		"title": "🏢 Physical Security Exploit",
+		"stages": [
+			{
+				"scenario": "You're tailgating an employee into the building. What's your move? 🚪",
+				"options": [
+					{ "text": "Smile and say you forgot your badge", "score": 10, "outcome": "😅 Classic—and it worked!" },
+					{ "text": "Try to pick the lock", "score": 0, "outcome": "🔓 Cameras caught you." },
+					{ "text": "Wait for someone else", "score": 5, "outcome": "🕰️ Took longer, but you got in." }
+				]
+			},
+			{
+				"scenario": "You're inside! You spot an empty desk. What next? 🪑",
+				"options": [
+					{ "text": "Check for sticky notes", "score": 10, "outcome": "📝 Jackpot: password + login." },
+					{ "text": "Take selfies at the desk", "score": 0, "outcome": "🤳 Fun, but dumb." },
+					{ "text": "Plug in a USB payload", "score": 5, "outcome": "💾 Installed successfully!" }
+				]
+			},
+			{
+				"scenario": "A janitor walks by. They glance at you. Your move? 🧹",
+				"options": [
+					{ "text": "Say you're with IT", "score": 10, "outcome": "🧑‍💻 Believable. You stay under the radar." },
+					{ "text": "Hide under the desk", "score": 0, "outcome": "🕵️ Weird. Now they’re suspicious." },
+					{ "text": "Smile and wave", "score": 5, "outcome": "👋 Awkward but fine." }
+				]
+			},
+			{
+				"scenario": "You find an unlocked terminal. What do you do? 🖥️",
+				"options": [
+					{ "text": "Email client data to yourself", "score": 10, "outcome": "📤 Risky, but it worked." },
+					{ "text": "Install spyware", "score": 5, "outcome": "🦠 Monitoring in progress." },
+					{ "text": "Change the desktop wallpaper", "score": 0, "outcome": "🎨 You’re an artist, not a hacker." }
+				]
+			},
+			{
+				"scenario": "You hear security coming. Final move? 🚓",
+				"options": [
+					{ "text": "GTFO with a flash drive", "score": 10, "outcome": "🏃 Mission complete!" },
+					{ "text": "Lock the workstation and walk calmly", "score": 5, "outcome": "🚶 You blend in and exit safely." },
+					{ "text": "Panic and hide in the break room", "score": 0, "outcome": "🥯 You were found next to a bagel tray." }
+				]
+			}
+		]
+	},
+	{
+		"title": "📱 Remote Worker Compromise",
+		"stages": [
+			{
+				"scenario": "You spot a remote employee venting about tech issues on Twitter. First step? 🐦",
+				"options": [
+					{ "text": "Send a fake IT support DM", "score": 10, "outcome": "💬 They clicked your link. Game on." },
+					{ "text": "Comment 'Try turning it off and on again'", "score": 0, "outcome": "🔁 Not exactly elite ops." },
+					{ "text": "Send malware disguised as a Zoom update", "score": 5, "outcome": "📦 They downloaded it, but didn’t run it... yet." }
+				]
+			},
+			{
+				"scenario": "They open a help ticket with real IT. You want to beat them to it. 🕐",
+				"options": [
+					{ "text": "Pretend to be IT via email", "score": 10, "outcome": "🧑‍💼 They believed you. Backdoor planted." },
+					{ "text": "Reply to the real ticket", "score": 0, "outcome": "📨 IT noticed the weird reply. You’ve been flagged." },
+					{ "text": "Send a follow-up ‘urgent’ message", "score": 5, "outcome": "⏳ Bought a bit more time." }
+				]
+			},
+			{
+				"scenario": "You gain access to their work device. What now? 💻",
+				"options": [
+					{ "text": "Browse shared folders", "score": 5, "outcome": "📁 Found project files. Meh." },
+					{ "text": "Install keylogger", "score": 10, "outcome": "🔑 You’ll be back for more later." },
+					{ "text": "Change their background to a dancing banana", "score": 0, "outcome": "🍌 Fun, but you blew your cover." }
+				]
+			},
+			{
+				"scenario": "They start a Zoom call. What do you do? 🎤",
+				"options": [
+					{ "text": "Join anonymously", "score": 5, "outcome": "👻 You watched silently from the shadows." },
+					{ "text": "Record the meeting silently", "score": 10, "outcome": "🎙️ Got internal discussion—goldmine!" },
+					{ "text": "Interrupt and say ‘I am inside your computer’", "score": 0, "outcome": "😱 Fired... and you're banned from DEF CON." }
+				]
+			},
+			{
+				"scenario": "Time to leave. One last move. ⛓️",
+				"options": [
+					{ "text": "Set up persistence", "score": 10, "outcome": "🔗 Backdoor established. You'll return..." },
+					{ "text": "Delete logs", "score": 5, "outcome": "🧹 Not flashy, but smart." },
+					{ "text": "Log out politely", "score": 0, "outcome": "🙇 You’re too courteous for this game." }
+				]
+			}
+		]
+	},
+	{
+		"title": "🤖 Vendor Impersonation Attack",
+		"stages": [
+			{
+				"scenario": "You find a supplier directory on the company website. What’s your first move? 🌐",
+				"options": [
+					{ "text": "Spoof a known vendor’s email", "score": 10, "outcome": "📦 Order confirmed. You’re in!" },
+					{ "text": "Call pretending to be FedEx", "score": 5, "outcome": "📞 A bit clunky, but got basic info." },
+					{ "text": "Send a fake contract renewal", "score": 0, "outcome": "📄 They weren’t expecting it. Bounced." }
+				]
+			},
+			{
+				"scenario": "They ask for a W-9 form. What do you do? 🧾",
+				"options": [
+					{ "text": "Send a malware-laced PDF", "score": 10, "outcome": "💥 They downloaded it without checking." },
+					{ "text": "Send a blank form", "score": 0, "outcome": "📝 Useless. They asked for more info." },
+					{ "text": "Ask them to send theirs first", "score": 5, "outcome": "🔁 Got their template. Neat." }
+				]
+			},
+			{
+				"scenario": "You get CC’d in internal finance emails. What’s next? 💰",
+				"options": [
+					{ "text": "Redirect payments to your account", "score": 10, "outcome": "💸 Transfer approved. Big win." },
+					{ "text": "Ask for bank details again", "score": 0, "outcome": "🏦 Too many requests. Raised doubts." },
+					{ "text": "Forward to your backup account", "score": 5, "outcome": "📤 Partial data exfil success." }
+				]
+			},
+			{
+				"scenario": "They’re starting to ask questions. What’s your cover? 🕵️",
+				"options": [
+					{ "text": "Say you're on a tight schedule", "score": 10, "outcome": "⏰ They rushed approval!" },
+					{ "text": "Mention your boss ‘Tom’", "score": 5, "outcome": "👔 They don’t know Tom but didn’t ask." },
+					{ "text": "Ghost them", "score": 0, "outcome": "👻 Suspicion confirmed. Game over." }
+				]
+			},
+			{
+				"scenario": "Final step before exit. 🏁",
+				"options": [
+					{ "text": "Invoice for future services", "score": 10, "outcome": "🧾 They paid in advance. Clean getaway." },
+					{ "text": "Send an NDA request", "score": 5, "outcome": "🔐 Minor gain, nothing major." },
+					{ "text": "Request a testimonial", "score": 0, "outcome": "💬 They Googled you. Oops." }
+				]
+			}
+		]
+	},
+	{
+		"title": "🧑‍💼 Insider Threat Simulation",
+		"stages": [
+			{
+				"scenario": "You're posing as a new intern with basic access. First step? 🧃",
+				"options": [
+					{ "text": "Ask a coworker for shared drive access", "score": 10, "outcome": "🗂️ They gave you everything!" },
+					{ "text": "Browse the breakroom memes folder", "score": 0, "outcome": "🤣 Good for laughs, not much else." },
+					{ "text": "Install a file sync tool", "score": 5, "outcome": "🔁 Now you’re syncing silently." }
+				]
+			},
+			{
+				"scenario": "You overhear someone talking about client files. What do you do? 🗣️",
+				"options": [
+					{ "text": "Pretend you’re working on the same project", "score": 10, "outcome": "🤝 They spill the beans." },
+					{ "text": "Start asking nosy questions", "score": 0, "outcome": "🕵️ They clammed up." },
+					{ "text": "Follow them to their desk", "score": 5, "outcome": "👀 Spotted passwords on sticky notes!" }
+				]
+			},
+			{
+				"scenario": "You’re asked to cover the reception desk for a bit. What do you snoop on? 🛎️",
+				"options": [
+					{ "text": "Check badge logs", "score": 10, "outcome": "📋 Saw who came and went!" },
+					{ "text": "Order snacks", "score": 0, "outcome": "🍪 Morale boosted. Not helpful though." },
+					{ "text": "Print out all HR docs", "score": 5, "outcome": "🖨️ Loud, but effective." }
+				]
+			},
+			{
+				"scenario": "You find an unmonitored laptop. What’s next? 💼",
+				"options": [
+					{ "text": "Clone the hard drive", "score": 10, "outcome": "🧬 You got the goods." },
+					{ "text": "Check browsing history", "score": 0, "outcome": "🧭 A little weird, not useful." },
+					{ "text": "Email yourself a zip file", "score": 5, "outcome": "📧 Could come in handy." }
+				]
+			},
+			{
+				"scenario": "Final move before your 'internship' ends. 📝",
+				"options": [
+					{ "text": "Export client list", "score": 10, "outcome": "📈 Valuable data secured." },
+					{ "text": "Forward meeting invites to your burner", "score": 5, "outcome": "📆 You’ll crash those later." },
+					{ "text": "Leave a goodbye note", "score": 0, "outcome": "✍️ HR appreciated the gesture. No bonus points though." }
+				]
+			}
+		]
+	},
+	{
+		"title": "📡 Rogue Wi-Fi Takeover",
+		"stages": [
+			{
+				"scenario": "You're parked outside the building with a fake Wi-Fi hotspot. What's the network name? 📶",
+				"options": [
+					{ "text": "CorpNet_Guest", "score": 10, "outcome": "🪝 Someone connected instantly." },
+					{ "text": "FreeCoffeeWiFi", "score": 5, "outcome": "☕ A curious intern joined." },
+					{ "text": "GetRickRolled", "score": 0, "outcome": "🎶 You got one hit, but no info." }
+				]
+			},
+			{
+				"scenario": "Someone connects. What's your next step? 🧠",
+				"options": [
+					{ "text": "Redirect to a fake login portal", "score": 10, "outcome": "🔓 Credentials acquired!" },
+					{ "text": "Inject memes into their browsing", "score": 0, "outcome": "🤣 Funny, but useless." },
+					{ "text": "Monitor DNS requests", "score": 5, "outcome": "📡 You see what they’re working on." }
+				]
+			},
+			{
+				"scenario": "You see someone logging into payroll. What do you do? 💵",
+				"options": [
+					{ "text": "Harvest credentials", "score": 10, "outcome": "💰 Welcome to PayData Island." },
+					{ "text": "Screenshot the session", "score": 5, "outcome": "📸 Got some visual clues." },
+					{ "text": "Do nothing", "score": 0, "outcome": "😐 So close, yet so lazy." }
+				]
+			},
+			{
+				"scenario": "Network admin is poking around. Your move? 🧑‍💻",
+				"options": [
+					{ "text": "Spoof your MAC address", "score": 10, "outcome": "🕵️ You vanished into the digital fog." },
+					{ "text": "Change your SSID to 'NotEvilWiFi'", "score": 0, "outcome": "📛 Not suspicious *at all*..." },
+					{ "text": "Throttle your power output", "score": 5, "outcome": "🔋 Barely detectable now." }
+				]
+			},
+			{
+				"scenario": "It’s almost lunch. Final move before pack-up. 🥪",
+				"options": [
+					{ "text": "Push malware update", "score": 10, "outcome": "🦠 Multiple machines infected!" },
+					{ "text": "Set auto-reconnect trap", "score": 5, "outcome": "🔁 They'll be back soon." },
+					{ "text": "Close the laptop and go to Taco Bell", "score": 0, "outcome": "🌮 At least *you* won lunch." }
+				]
+			}
+		]
+	},
+	{
+		"title": "🧽 Cleaning Crew Chaos",
+		"stages": [
+			{
+				"scenario": "You're posing as janitorial staff with late-night building access. What’s your first move? 🧹",
+				"options": [
+					{ "text": "Check trash bins for printed docs", "score": 10, "outcome": "🗑️ One had credentials on it. Jackpot." },
+					{ "text": "Sweep dramatically near the CEO’s office", "score": 0, "outcome": "🕺 Impressive form. No intel." },
+					{ "text": "Check under keyboards for notes", "score": 5, "outcome": "🧻 Found a login sticky." }
+				]
+			},
+			{
+				"scenario": "You find a USB just sitting on a desk. Do you...? 💽",
+				"options": [
+					{ "text": "Plug it into a workstation", "score": 10, "outcome": "💻 Malware deployed." },
+					{ "text": "Pocket it for later", "score": 5, "outcome": "🎒 Could still be useful." },
+					{ "text": "Leave it there", "score": 0, "outcome": "🤷 Missed opportunity." }
+				]
+			},
+			{
+				"scenario": "You spot a logged-in terminal in a break room. What’s your play? 🍩",
+				"options": [
+					{ "text": "Email sensitive files to a burner", "score": 10, "outcome": "📬 Clean sweep." },
+					{ "text": "Change desktop background to ‘HACKED!’", "score": 0, "outcome": "😳 Bold. Also very dumb." },
+					{ "text": "Install remote access tool", "score": 5, "outcome": "🔧 You’ll be back." }
+				]
+			},
+			{
+				"scenario": "A security guard walks in. What do you do? 🚔",
+				"options": [
+					{ "text": "Say you’re covering for night shift", "score": 10, "outcome": "🧍 They nod and walk away." },
+					{ "text": "Ask if they want coffee", "score": 5, "outcome": "☕ Distracted them, nice!" },
+					{ "text": "Panic and sprint into a closet", "score": 0, "outcome": "🚪 You’re now stuck with mops." }
+				]
+			},
+			{
+				"scenario": "Final round. Almost time to clock out. ⏰",
+				"options": [
+					{ "text": "Plant a fake badge", "score": 10, "outcome": "🎫 It’ll trigger a report later." },
+					{ "text": "Take photos of exposed screens", "score": 5, "outcome": "📷 Got a few helpful shots." },
+					{ "text": "Actually clean something", "score": 0, "outcome": "✨ The floors look great, but..." }
+				]
+			}
+		]
+	}
+]}  

@@ -1,0 +1,172 @@
+[gd_scene load_steps=10 format=3 uid="uid://bl4p61vj2pq6q"]
+
+[ext_resource type="Script" uid="uid://b5mcpp3lg7wp2" path="res://Scripts/SecureOrSketchy.gd" id="1_r150o"]
+[ext_resource type="Texture2D" uid="uid://dqa8t15nmu34v" path="res://Assets/background.jpg" id="2_idj7w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rgh2o"]
+bg_color = Color(0.180392, 0.717647, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r150o"]
+bg_color = Color(0.180392, 0.717647, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kln2b"]
+bg_color = Color(0.952941, 0.0313726, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_idj7w"]
+bg_color = Color(0.952941, 0.0313726, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pbw6q"]
+bg_color = Color(0.6, 0.6, 0.6, 0.439216)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o4nwl"]
+bg_color = Color(0.0313726, 0.172549, 0.203922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btw8k"]
+bg_color = Color(0.0585957, 0.172914, 0.182663, 1)
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_r150o")
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
+scale = Vector2(1, 1.00154)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="BackgroundSprite" type="TextureRect" parent="Background/ParallaxLayer"]
+texture_repeat = 2
+offset_right = 1140.0
+offset_bottom = 1024.0
+scale = Vector2(1.01354, 0.634002)
+texture = ExtResource("2_idj7w")
+expand_mode = 5
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 12.0
+offset_right = 815.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 50
+text = "Secure or Sketchy?"
+
+[node name="CardContainer" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 382.0
+offset_top = 110.0
+offset_right = 422.0
+offset_bottom = 150.0
+
+[node name="CardPanel" type="Panel" parent="CardContainer"]
+layout_mode = 0
+offset_left = 9.00003
+offset_top = 5.00001
+offset_right = 252.0
+offset_bottom = 250.0
+scale = Vector2(1.62042, 1.6352)
+
+[node name="CardText" type="Label" parent="CardContainer/CardPanel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 237.0
+offset_bottom = 234.0
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ButtonContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 536.0
+offset_right = 732.0
+offset_bottom = 598.0
+
+[node name="SecureButton" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 39
+theme_override_styles/hover = SubResource("StyleBoxFlat_rgh2o")
+theme_override_styles/normal = SubResource("StyleBoxFlat_r150o")
+text = "Secure"
+
+[node name="SketchyButton" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 39
+theme_override_styles/hover = SubResource("StyleBoxFlat_kln2b")
+theme_override_styles/normal = SubResource("StyleBoxFlat_idj7w")
+text = "Sketchy"
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 930.0
+offset_top = 598.0
+offset_right = 1012.0
+offset_bottom = 637.0
+theme_override_font_sizes/font_size = 28
+text = "Score:"
+
+[node name="FeedbackPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 385.0
+offset_top = 109.0
+offset_right = 783.0
+offset_bottom = 507.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pbw6q")
+
+[node name="FeedbackLabel" type="Label" parent="FeedbackPanel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 10.0
+offset_right = 391.0
+offset_bottom = 380.0
+theme_override_colors/font_color = Color(0, 0.937255, 0, 1)
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 25.0
+offset_right = 192.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 21
+text = "← Back to Menu"
+
+[node name="GameIntroPopup" type="PopupPanel" parent="."]
+initial_position = 1
+size = Vector2i(700, 466)
+visible = true
+theme_override_styles/panel = SubResource("StyleBoxFlat_o4nwl")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameIntroPopup"]
+offset_right = 700.0
+offset_bottom = 466.0
+
+[node name="Label" type="Label" parent="GameIntroPopup/VBoxContainer"]
+layout_mode = 2
+text = "
+🛡️ SECURE OR SKETCHY?
+
+
+You’re swiping through tech stuff—emails, apps, websites, you name it.
+
+Is it legit? Or is it laced with malware, scams, and sketchy permissions?
+
+✅ Hit \"Secure\" for the good ones  
+🚨 Smash \"Sketchy\" for the bad stuff  
+🎯 Score points for making smart calls
+
+Trust your instincts—but don’t trust that “Free WiFi Booster Pro Ultra 9000”. 😬
+
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="GameIntroPopup/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_btw8k")
+text = "Continue to the game"

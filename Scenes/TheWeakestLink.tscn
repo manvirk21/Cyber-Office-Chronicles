@@ -1,0 +1,146 @@
+[gd_scene load_steps=6 format=3 uid="uid://h3y1l0r8tctq"]
+
+[ext_resource type="Script" uid="uid://d0gbxnj7uip5t" path="res://Scripts/TheWeakestLink.gd" id="1_becus"]
+[ext_resource type="Texture2D" uid="uid://bwimwrqtpp57q" path="res://Assets/Hacker Picture.jpg" id="2_eb762"]
+
+[sub_resource type="Theme" id="Theme_becus"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eb762"]
+bg_color = Color(0.0313726, 0.172549, 0.203922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r4130"]
+bg_color = Color(0.0585957, 0.172914, 0.182663, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1149.0
+offset_bottom = 647.0
+script = ExtResource("1_becus")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1158.0
+offset_bottom = 656.0
+texture = ExtResource("2_eb762")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 76.0
+offset_right = -380.0
+offset_bottom = -187.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="ScenarioLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+theme_override_font_sizes/font_size = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="OptionAButton" type="Button" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_becus")
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 3
+icon_alignment = 1
+expand_icon = true
+
+[node name="OptionBButton" type="Button" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 3
+icon_alignment = 1
+expand_icon = true
+
+[node name="OptionCButton" type="Button" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 3
+icon_alignment = 1
+expand_icon = true
+
+[node name="OutcomeLabel" type="Label" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ContinueButtons" type="HBoxContainer" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="ContinueYesButton" type="Button" parent="VBoxContainer/ContinueButtons"]
+layout_mode = 2
+text = "YES"
+
+[node name="ContinueNoButton" type="Button" parent="VBoxContainer/ContinueButtons"]
+layout_mode = 2
+text = "NO"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 147.0
+offset_bottom = 41.0
+text = "← Back to Menu"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 11.0
+offset_right = 950.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 50
+text = "🔗 The Weakest Link 🔗"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="GameIntroPopup" type="PopupPanel" parent="."]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(700, 380)
+visible = true
+theme_override_styles/panel = SubResource("StyleBoxFlat_eb762")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameIntroPopup"]
+offset_right = 700.0
+offset_bottom = 380.0
+
+[node name="Label" type="Label" parent="GameIntroPopup/VBoxContainer"]
+layout_mode = 2
+text = "
+🎭 THE WEAKEST LINK
+
+You’re in a social engineering simulator.  
+Every scenario is a mini cyber-drama with choices that shape your fate.
+
+👤 Impersonate. Manipulate. Investigate.  
+
+Each decision scores points based on how clever, cautious, or chaotic it is.
+
+Can you spot the weak link... or are you it? 😅
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="GameIntroPopup/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_r4130")
+text = "Continue to the game"

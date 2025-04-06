@@ -1,0 +1,247 @@
+[
+  {
+	"text": "Your package has been delayed. Click here to reschedule delivery: http://fedex-tracker.info",
+	"answer": "sketchy",
+	"explanation": "The URL is fake—legitimate companies use their official domain like fedex.com."
+  },
+  {
+	"text": "Instagram asks to access your photos so you can post them directly.",
+	"answer": "secure",
+	"explanation": "Photo-sharing apps typically need photo access—this is expected behavior."
+  },
+  {
+	"text": "This free flashlight app needs access to your contacts and microphone.",
+	"answer": "sketchy",
+	"explanation": "Flashlight apps don’t need contacts or mic access—it's a red flag."
+  },
+  {
+	"text": "An email from 'Apple Support' says your account was suspended. Link: http://apple.support-logins.net",
+	"answer": "sketchy",
+	"explanation": "That’s a spoofed domain—Apple would never use a URL like that."
+  },
+  {
+	"text": "Your Google account was signed in on a new device. Check activity: https://myaccount.google.com/security",
+	"answer": "secure",
+	"explanation": "That’s Google’s real domain and a common security alert."
+  },
+  {
+	"text": "A VPN app asks for access to your browsing history and app usage.",
+	"answer": "sketchy",
+	"explanation": "A privacy tool shouldn't track you—this contradicts its purpose."
+  },
+  {
+	"text": "A new app asks for notification access so it can alert you to messages.",
+	"answer": "secure",
+	"explanation": "This is normal for messaging or utility apps."
+  },
+  {
+	"text": "“Congratulations! You’ve won a $1,000 gift card. Click to claim your prize!”",
+	"answer": "sketchy",
+	"explanation": "Unsolicited prizes with links are classic phishing bait."
+  },
+  {
+	"text": "A coworker sent you a shared doc, but the email says: 'shared via g00gle.docs.work'",
+	"answer": "sketchy",
+	"explanation": "That's a fake domain. The real one is google.com."
+  },
+  {
+	"text": "The Uber app requests GPS access to track your ride location.",
+	"answer": "secure",
+	"explanation": "GPS access is expected for a transportation app."
+  },
+  {
+	"text": "This app asks for camera access to scan barcodes.",
+	"answer": "secure",
+	"explanation": "Barcode scanners need camera access—it’s a valid permission."
+  },
+  {
+	"text": "A music player wants to access your text messages and call logs.",
+	"answer": "sketchy",
+	"explanation": "Music apps don’t need access to messages or call data."
+  },
+  {
+	"text": "You receive an email that appears to be from your bank, but the sender's address is 'security@bank-alerts.xyz'.",
+	"answer": "sketchy",
+	"explanation": "Real banks use their official domains—.xyz is a red flag."
+  },
+  {
+	"text": "This fitness app requests access to your step count from your phone’s health system.",
+	"answer": "secure",
+	"explanation": "Fitness apps often use that data to track health goals."
+  },
+  {
+	"text": "An app asks to access your clipboard.",
+	"answer": "sketchy",
+	"explanation": "Clipboard access can be abused to steal copied passwords or info."
+  },
+  {
+	"text": "An email says your PayPal account is locked. The link goes to 'paypalsecure-verification.com'",
+	"answer": "sketchy",
+	"explanation": "That’s a spoofed site—PayPal only uses paypal.com."
+  },
+  {
+	"text": "A calculator app asks to track your location in the background.",
+	"answer": "sketchy",
+	"explanation": "Calculators don’t need location—suspicious behavior."
+  },
+  {
+	"text": "A weather app asks for location access while using the app.",
+	"answer": "secure",
+	"explanation": "That’s expected so it can show your local forecast."
+  },
+  {
+	"text": "This app wants permission to record audio and run in the background 24/7.",
+	"answer": "sketchy",
+	"explanation": "Always-on recording is a major privacy risk."
+  },
+  {
+	"text": "You get an email with a fake invoice from a company you've never heard of.",
+	"answer": "sketchy",
+	"explanation": "Scam invoices are a common phishing tactic."
+  },
+  {
+	"text": "An app says 'We need admin access to optimize performance.'",
+	"answer": "sketchy",
+	"explanation": "Most apps don’t need admin rights—this could be malware."
+  },
+  {
+	"text": "Microsoft sends you a login alert from a new location via: https://account.microsoft.com",
+	"answer": "secure",
+	"explanation": "That’s a valid domain used for real Microsoft account alerts."
+  },
+  {
+	"text": "An email says 'Click here to view your tax refund status' and links to 'irs-tax-check.org'",
+	"answer": "sketchy",
+	"explanation": "That’s not an official IRS domain—it’s a phishing trap."
+  },
+  {
+	"text": "An app requests file storage access so you can upload documents.",
+	"answer": "secure",
+	"explanation": "That’s expected for apps like Google Drive or Dropbox."
+  },
+  {
+	"text": "A random email asks you to 'verify your account info immediately or it will be deleted.'",
+	"answer": "sketchy",
+	"explanation": "Urgency + threats are classic phishing red flags."
+  },
+  {
+	"text": "An app asks for access to accessibility services, but it's not a tool that needs them.",
+	"answer": "sketchy",
+	"explanation": "Malware often abuses accessibility permissions to gain control."
+  },
+  {
+	"text": "A photo editor asks for camera and photo library access.",
+	"answer": "secure",
+	"explanation": "That’s necessary for editing and saving your pictures."
+  },
+  {
+	"text": "You get a Zoom invite from an unknown email and the link is 'zoomstartmeeting.co'",
+	"answer": "sketchy",
+	"explanation": "That’s not a Zoom domain—zoom.us is the only valid one."
+  },
+  {
+	"text": "An app wants SMS access so it can auto-fill OTP codes for login.",
+	"answer": "secure",
+	"explanation": "Some apps use this for convenience, though it should be optional."
+  },
+  {
+	"text": "You’re offered a free Bitcoin giveaway—just enter your wallet address!",
+	"answer": "sketchy",
+	"explanation": "Scams often promise free crypto in exchange for your info."
+  },
+  {
+	"text": "You receive a message from your boss asking you to buy gift cards ASAP—but it's from a Gmail address.",
+	"answer": "sketchy",
+	"explanation": "This is a common impersonation scam using personal email addresses."
+  },
+  {
+	"text": "Your Wi-Fi analyzer app requests location access to find nearby networks.",
+	"answer": "secure",
+	"explanation": "Location is needed to scan for Wi-Fi SSIDs on newer devices."
+  },
+  {
+	"text": "An email says 'we noticed suspicious activity' but doesn’t include your name and links to a strange domain.",
+	"answer": "sketchy",
+	"explanation": "Generic messages and suspicious links = phishing."
+  },
+  {
+	"text": "Your phone’s OS update wants full access to system settings.",
+	"answer": "secure",
+	"explanation": "Operating system updates need system-level access to function."
+  },
+  {
+	"text": "An app requests Bluetooth access to connect to nearby devices.",
+	"answer": "secure",
+	"explanation": "Common for fitness trackers, speakers, and smart devices."
+  },
+  {
+	"text": "An email from IT support asks for your password to 'verify your account.'",
+	"answer": "sketchy",
+	"explanation": "No legit IT staff will ask for your password—ever."
+  },
+  {
+	"text": "An app wants to auto-launch at startup and monitor your app usage.",
+	"answer": "sketchy",
+	"explanation": "That’s excessive unless clearly necessary—many malware apps do this."
+  },
+  {
+	"text": "Your password manager app wants access to autofill login fields.",
+	"answer": "secure",
+	"explanation": "That’s expected behavior for password managers."
+  },
+  {
+	"text": "A free game app wants access to your call logs and contact list.",
+	"answer": "sketchy",
+	"explanation": "Games don’t need your private contact or call data."
+  },
+  {
+	"text": "An email appears to be from Netflix, but says 'Your payment failed' and links to 'netflixbilling-help.com'",
+	"answer": "sketchy",
+	"explanation": "That’s a fake domain—real Netflix links come from netflix.com."
+  },
+  {
+	"text": "Your smart home app wants access to your local network.",
+	"answer": "secure",
+	"explanation": "That’s needed to control smart devices like lights and thermostats."
+  },
+  {
+	"text": "A productivity app asks to access your calendar and events.",
+	"answer": "secure",
+	"explanation": "This allows it to manage meetings or schedule tasks."
+  },
+  {
+	"text": "A game wants location access to serve local ads and offers.",
+	"answer": "sketchy",
+	"explanation": "Location for ads isn't necessary—opt-in at best."
+  },
+  {
+	"text": "A social media app asks to access your camera, mic, and storage.",
+	"answer": "secure",
+	"explanation": "These are common permissions for posting media content."
+  },
+  {
+	"text": "An app asks to disable your phone’s lock screen and take admin privileges.",
+	"answer": "sketchy",
+	"explanation": "Very dangerous—only trusted security tools should have this access."
+  },
+  {
+	"text": "A photo gallery app wants access to your media files.",
+	"answer": "secure",
+	"explanation": "That’s normal—it can’t show or organize photos otherwise."
+  },
+  {
+	"text": "A streaming app wants to record your screen and audio.",
+	"answer": "sketchy",
+	"explanation": "This could be used to spy—usually unnecessary for streaming."
+  },
+  {
+	"text": "A healthcare app wants access to your step count and heart rate.",
+	"answer": "secure",
+	"explanation": "That’s standard functionality for health tracking apps."
+  },
+  {
+	"text": "A message says your Windows license is expired—call this number immediately.",
+	"answer": "sketchy",
+	"explanation": "That’s a tech support scam—never call unverified numbers."
+  }
+]

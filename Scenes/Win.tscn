@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsvwvubyc5jic"]
+
+[ext_resource type="Script" uid="uid://ftpcuv7e0kd1" path="res://Scripts/win.gd" id="1_3vusp"]
+[ext_resource type="Texture2D" uid="uid://dfilor17rqicm" path="res://Assets/win.png" id="2_jo0u0"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1155.0
+offset_bottom = 651.0
+script = ExtResource("1_3vusp")
+
+[node name="Win" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -79.0
+offset_right = 1152.0
+offset_bottom = 690.0
+texture = ExtResource("2_jo0u0")
+expand_mode = 1
+
+[node name="MainMenuButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 16.0
+offset_right = 151.0
+offset_bottom = 47.0
+text = "← Back to Menu"

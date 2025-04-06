@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://d05gt01qbug7s"]
+
+[ext_resource type="Script" uid="uid://dhtroqtgifxi6" path="res://Scripts/MainMenu.gd" id="1_tt5f1"]
+[ext_resource type="Texture2D" uid="uid://bqopnrqxfb1f7" path="res://Assets/main.png" id="2_853f1"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1164.0
+offset_bottom = 654.0
+script = ExtResource("1_tt5f1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 648.0
+texture = ExtResource("2_853f1")
+expand_mode = 1
+
+[node name="ButtonContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 329.0
+offset_right = 570.0
+offset_bottom = 465.0
+scale = Vector2(2, 2)
+
+[node name="SecureOrSketchyButton" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "🎯 Play Secure or Sketchy"
+
+[node name="TheWeakestLinkButton" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "🔗 Play The Weakest Link"
+
+[node name="CyberMaze" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "🕵 Play Cyber Maze"
+
+[node name="QuitButton" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "🚪 Quit"
+
+[node name="SubtitleLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 229.0
+offset_right = 765.0
+offset_bottom = 264.0
+theme_override_font_sizes/font_size = 21
+text = "Cybersecurity games for everyone"
